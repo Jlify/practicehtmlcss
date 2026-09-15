@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mercedes Store</title>
+    <style>
+        .card {
+
+            background-size: 500px;
+            width: 500px;
+            height: 300px;
+            background-repeat: no-repeat;
+        }
+        #one {
+            background-image: url("https://group.mercedes-benz.com/bilder/misc/visuals-stern/visual-mercedes-benz-zentrale-02-w1680xh945-cutout.jpg?impolicy=acrop&im=AspectCrop=(9,4),xPosition=0,yPosition=0.3");
+            color: white;
+        }
+
+        #two {
+            background-image: url("https://group.mercedes-benz.com/bilder/konzern/tradition/startseitenbilder/unternehmensgeschichte-sw-w600xh600-cutout.jpg");
+            color: black;
+            
+        }
+
+        #three {
+            background-image: url("https://group.mercedes-benz.com/bilder/produkte/pkw/mercedes-benz/s-klasse-2026/s-klasse-2026-001-w1680xh945-cutout.jpg?impolicy=acrop&im=AspectCrop=(9,4),xPosition=0,yPosition=1.0");
+            color: white;
+            
+        }
+
+        #four {
+            background-image: url("https://group.mercedes-benz.com/bilder/unternehmen/standorte/tuscaloosa/tuscaloosa-020v2-w614xh345-cutout.jpg?impolicy=acrop&im=AspectCrop=(4,3),xPosition=1.0,yPosition=0");
+            color: black;
+            
+        }
+
+        .box>* {
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: rgb(96 139 168 / 0.2);
+        }
+
+        .box {
+            width: 80%;
+            border: black;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bgv {
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bgv video {
+            position: absolute;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;background-color: maroon;">Das Beste oder nichts</h1>
+    <div class="bgv">
+        <video autoplay loop muted>
+            <source src="/home/reagan/Videos/background" type="video/mp4">
+        </video>
+        <div class="box">
+            <div id="one" class="card">
+                <p><i>The Mercedes-Benz Group AG (former Daimler AG)</i> is one of the world's most successful
+                    automotive
+                    companies. With Mercedes-Benz AG, the Group offers a wide range of high-end passenger cars
+                    and premium
+                    vans. Mercedes-Benz Financial Services is another key pillar of the Group and plays a
+                    central role in
+                    the financial services business.
+                </p>
+            </div>
+            <div id="two" class="card">
+                <p><i>Classic Mercedes-Benz</i> models are globally renowned for their unmatched mechanical
+                    over-engineering,
+                    extreme
+                    durability, and timeless aesthetic, built in an era when uncompromising material quality and
+                    repairability
+                    were the ultimate priorities.</p>
+            </div>
+            <div id="three" class="card">
+                <p><i>Modern Mercedes-Benz</i> models represent the pinnacle of automotive digitization,
+                    cutting-edge luxury,
+                    and advanced connectivity, shifting the brand's focus from pure mechanical longevity toward
+                    software-driven
+                    innovation and complex assistance systems.</p>
+            </div>
+            <div id="four" class="card">
+                <p>Mercedes-Benz customer service balances the specialized preservation of historical vehicles
+                    through dedicated
+                    heritage networks with the high-tech, proactive care required for modern digital luxury
+                    platforms.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://www.mercedes-benz.com/de/innovation/because-it-is-mercedes-benz/">
+            <p style="text-align: center; background-color: antiquewhite;">Mercedes-Benz Official Store</p>
+        </a>
+    </footer>
+</body>
+
+</html>
